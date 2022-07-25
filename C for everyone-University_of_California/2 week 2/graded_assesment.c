@@ -1,7 +1,10 @@
-
+/*
+This programe uses struct to print the nextday depending on the current day
+*/
 #include <stdio.h>
 int tot_days, i;
 
+// Enumerate the number of months in a year
 typedef enum month
 {
     jan,
@@ -24,6 +27,7 @@ typedef struct date
     int d;
 } date;
 
+// Prints the month and day passed into the function with respect to the created struct
 void printday(date *the_date)
 {
 
@@ -88,6 +92,7 @@ void printday(date *the_date)
         tot_days = 31;
     }
 }
+
 date *nextday(date *the_date)
 { // When the day chosen is the last day of the month
     if (the_date->d == tot_days)
