@@ -30,10 +30,13 @@ typedef struct date
 // Prints the month and day passed into the function with respect to the created struct
 void printday(date *the_date)
 {
+    // If the day passed in is "Jan"..
 
     if (the_date->m == jan)
     {
+        //..print January...
         printf("January %d", the_date->d);
+        //...taking note of the total days, storing it in a global variable
         tot_days = 31;
     }
     else if (the_date->m == feb)
