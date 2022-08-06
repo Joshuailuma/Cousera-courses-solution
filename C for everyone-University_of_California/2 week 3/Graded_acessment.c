@@ -4,7 +4,7 @@ A routine that will rearrange the list in sorted order of these values. */
 
 #include <stdio.h>
 #include <stdlib.h>
-// In CAn array is not allowed to be returned from a function
+// In can array is not allowed to be returned from a function
 // Instead we return a pointer to the array, specifing the array name
 // without an index
 int *random_number()
